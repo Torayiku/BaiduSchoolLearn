@@ -1,0 +1,121 @@
+/* 实现一个两栏布局，左侧占30%宽度，右侧占70%宽度
+实现一个两栏布局，左侧固定宽度，右侧根据浏览器宽度进行自适应变化
+实现一个两栏布局，右侧固定宽度，左侧根据浏览器宽度进行自适应变化
+实现一个三栏布局，左侧固定宽度，右侧固定宽度，中间部分宽度随浏览器宽度变化而自适应变化
+实现一个三栏布局，左侧固定宽度，中间固定宽度，右侧根据浏览器宽度变化而自适应变化 */
+
+.body{
+    height: 5000px;
+}
+
+/* 实现一个两栏布局，左侧占30%宽度，右侧占70%宽度 */
+
+.float1{
+    height: 100px;
+}
+
+.float1 div:nth-child(1){
+    width: 30%;
+    background-color: pink;
+    float: left;
+    height: 100px;
+}
+
+.float1 div:nth-child(2){
+    width: 70%;
+    background-color: powderblue;
+    height: 100px;
+    float: right;
+}
+
+/* 实现一个两栏布局，左侧固定宽度，右侧根据浏览器宽度进行自适应变化 */
+
+.float2{
+    height: 100px;
+    margin-top: 10px;
+}
+
+.float2 div:nth-child(1){
+    width:300px;
+    height: 100px;
+    float: left;;
+    background-color: pink;
+}
+
+.float2 div:nth-child(2){
+    height: 100px;
+    background-color: powderblue;
+}
+
+/* 实现一个两栏布局，右侧固定宽度，左侧根据浏览器宽度进行自适应变化 */
+
+.float3{
+    height: 100px;
+    margin-top: 10px;
+}
+
+.float3 div:nth-child(1){
+    height: 100px;
+    background-color: pink;
+    width: 200px;
+    float: right;
+}
+
+.float3 div:nth-child(2){
+    height: 100px;
+    background-color: powderblue;
+}
+
+/* 实现一个三栏布局，左侧固定宽度，右侧固定宽度，中间部分宽度随浏览器宽度变化而自适应变化 */
+
+.float4{
+   height: 100px;
+   margin-top: 10px; 
+}
+
+.float4 div:nth-child(1){
+    width: 100px;
+    background-color: pink;
+    height: 100px;
+    float: left;
+}
+
+.float4 div:nth-child(3){
+    height: 100px;
+    background-color: powderblue;
+}
+
+.float4 div:nth-child(2){
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    float: right;
+}
+
+/* 实现一个三栏布局，左侧固定宽度，中间固定宽度，右侧根据浏览器宽度变化而自适应变化 */
+
+
+.float5{
+    height: 100px;
+    margin-top: 10px;
+}
+
+.float5 div:nth-child(1){
+    width: 200px;
+    height: 100px;
+    background-color:pink;
+    float: left;
+}
+
+.float5 div:nth-child(2){
+    width: 200px;
+    height: 100px;
+    background-color: powderblue;
+    float: left;
+}
+
+.float5 div:nth-child(3){
+    height: 100px;
+    background-color: purple;
+}
+
